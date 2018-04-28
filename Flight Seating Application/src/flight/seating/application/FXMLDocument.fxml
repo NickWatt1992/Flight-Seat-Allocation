@@ -10,24 +10,24 @@
     <children>
         <Button fx:id="seatingButton" layoutX="97.0" layoutY="450.0" onAction="#handleSeatingButtonAction" text="Show Seatings" />
       <TextArea fx:id="seatingTextArea" layoutX="14.0" layoutY="21.0" prefHeight="417.0" prefWidth="258.0" />
-      <TextField layoutX="435.0" layoutY="48.0" prefHeight="25.0" prefWidth="113.0" />
-      <TextField layoutX="435.0" layoutY="83.0" prefHeight="25.0" prefWidth="113.0" />
-      <Button fx:id="adultButton" layoutX="446.0" layoutY="126.0" mnemonicParsing="false" text="Adult" />
-      <Button fx:id="childButton" layoutX="496.0" layoutY="126.0" mnemonicParsing="false" text="Child" />
-      <Button fx:id="firstClassButton" layoutX="362.0" layoutY="164.0" mnemonicParsing="false" text="First" />
-      <Button fx:id="businessClassButton" layoutX="412.0" layoutY="164.0" mnemonicParsing="false" text="Business" />
-      <Button fx:id="enconomyClassButton" layoutX="479.0" layoutY="164.0" mnemonicParsing="false" text="Enconomy" />
-      <Button fx:id="windowButton" layoutX="362.0" layoutY="204.0" mnemonicParsing="false" text="Window" />
-      <Button fx:id="aisleButton" layoutX="435.0" layoutY="204.0" mnemonicParsing="false" text="Aisle" />
-      <Button fx:id="middleButton" layoutX="487.0" layoutY="204.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="61.0" text="Middle" />
+      <TextField fx:id="firstName" layoutX="435.0" layoutY="48.0" prefHeight="25.0" prefWidth="113.0" />
+      <TextField fx:id="lastName" layoutX="435.0" layoutY="83.0" prefHeight="25.0" prefWidth="113.0" />
+      <Button fx:id="adultButton" layoutX="446.0" layoutY="126.0" onAction="#handleAdultButtonAction" text="Adult" />
+      <Button fx:id="childButton" layoutX="496.0" layoutY="126.0" onAction="#handleChildButtonAction" text="Child" />
+      <Button fx:id="firstClassButton" layoutX="362.0" layoutY="164.0" onAction="#handleFirstClassButtonAction" text="First" />
+      <Button fx:id="businessClassButton" layoutX="412.0" layoutY="164.0" onAction="#handleBusinessClassButtonAction" text="Business" />
+      <Button fx:id="enconomyClassButton" layoutX="479.0" layoutY="164.0" onAction="#handleEconomyClassButtonAction" text="Enconomy" />
+      <Button fx:id="windowButton" layoutX="362.0" layoutY="204.0" onAction="#handleWindowButtonAction" text="Window" />
+      <Button fx:id="aisleButton" layoutX="435.0" layoutY="204.0" onAction="#handleAisleButtonAction" text="Aisle" />
+      <Button fx:id="middleButton" layoutX="487.0" layoutY="204.0" onAction="#handleMiddleButtonAction" prefHeight="25.0" prefWidth="61.0" text="Middle" />
       <Label layoutX="288.0" layoutY="52.0" text="First Name:" />
       <Label layoutX="288.0" layoutY="87.0" text="Last Name:" />
       <Label layoutX="288.0" layoutY="130.0" text="Select One:" />
       <Label layoutX="288.0" layoutY="168.0" text="Select One:" />
       <Label layoutX="288.0" layoutY="208.0" text="Select One:" />
-      <Button fx:id="confirmButton" layoutX="383.0" layoutY="249.0" mnemonicParsing="false" text="Confirm" />
+      <Button fx:id="confirmButton" layoutX="383.0" layoutY="249.0" mnemonicParsing="false" onAction="#handleConfirmButtonAction" text="Confirm" />
       <Button fx:id="cancelButton" layoutX="453.0" layoutY="249.0" mnemonicParsing="false" text="Cancel" />
-      <TextField layoutX="409.0" layoutY="14.0" prefHeight="25.0" prefWidth="139.0" />
+      <TextField fx:id="searchCustomer" layoutX="409.0" layoutY="14.0" prefHeight="25.0" prefWidth="139.0" />
       <Label layoutX="288.0" layoutY="18.0" text="Search by Customer:" />
       <Button fx:id="exitButton" layoutX="501.0" layoutY="450.0" onAction="#handleExitButtonAction" text="Exit" />
     </children>
